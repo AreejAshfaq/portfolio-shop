@@ -1,0 +1,177 @@
+/* Google Font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap");
+
+/* Custom CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    color: black;
+    background-color: #bea060;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+}
+
+.header-left-side {
+    color: white;
+    text-align: left; /* Align text to left */
+    padding: 20px; /* Added padding for spacing */
+    flex: 1; /* Take up equal space */
+}
+
+.header-left-side h1 {
+    color: #bea060;
+    line-height: 1.2em;
+    font-size: 4rem; /* Adjusted for responsiveness */
+    margin-bottom: 20px;
+    font-weight: 400 !important;
+}
+
+.header-left-side h2 {
+    color: #bea060;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem; /* Adjusted for responsiveness */
+    line-height: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.header-left-side p {
+    margin: 20px 0; /* Simplified margins */
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px; /* Adjusted letter spacing */
+    font-size: 1rem; /* Adjusted for responsiveness */
+    color: #c1bfbf;
+    line-height: 1.5;
+}
+
+button {
+    padding: 20px 10px;
+    border: 2px solid #bea060;
+    background: transparent;
+    width: 47%;
+    color: white;
+    margin: 10px 5px; /* Adjusted margins for spacing */
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem; /* Adjusted for responsiveness */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.7s, transform 0.3s; /* Added transition for scale */
+}
+
+button:hover {
+    background-color: #bea060;
+    transform: scale(1.05); /* Added scale effect */
+}
+
+.btn {
+    width: 97%;
+    background-color: #bea060;
+}
+
+.header-right-side {
+    flex: 1; /* Take up equal space */
+    display: flex; /* Center the image */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+.header-right-side img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.scrollable-section {
+    padding: 50px;
+    background-color: #222; /* Dark background for the section */
+    color: #c1bfbf; /* Light text color */
+    margin: 20px 0; /* Margin for spacing */
+    text-align: center; /* Center text for consistency */
+}
+
+.scrollable-section h2 {
+    color: #bea060;
+    font-size: 2rem; /* Adjusted font size */
+    margin-bottom: 20px;
+}
+
+.scrollable-section ul {
+    list-style-type: disc; /* Bullet points for the list */
+    margin-left: 20px; /* Indent the list */
+    text-align: left; /* Align list text to the left */
+}
+
+.about-profile {
+    display: flex;
+    justify-content: space-around; /* Space around sections */
+    margin: 20px 0; /* Margin for spacing */
+    padding: 50px;
+    background-color: #333; /* Background color for the section */
+    color: #c1bfbf; /* Light text color */
+}
+
+.about,
+.profile {
+    flex: 1; /* Equal space for both sections */
+    padding: 20px; /* Padding for spacing */
+}
+
+.navigation {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.navigation button {
+    margin: 0 10px; /* Spacing between buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    border: 2px solid #bea060; /* Border color */
+    background-color: transparent; /* Transparent background */
+    color: #bea060; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.navigation button:hover {
+    background-color: #bea060; /* Background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+footer {
+    text-align: center; /* Center text in footer */
+    padding: 20px; /* Padding for spacing */
+    color: #c1bfbf; /* Light color for footer text */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack content on smaller screens */
+    }
+
+    .header-left-side h1 {
+        font-size: 3rem; /* Smaller header on mobile */
+    }
+
+    .header-left-side h2,
+    button {
+        font-size: 1rem; /* Smaller font sizes on mobile */
+    }
+
+    .scrollable-section h2 {
+        font-size: 1.5rem; /* Adjust header size in scroll
